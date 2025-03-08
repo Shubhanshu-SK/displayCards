@@ -1,0 +1,155 @@
+
+body{
+  background:#333;
+}
+
+.bgImage{
+  background-image: url('https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546189.jpg?ga=GA1.1.206173204.1726642244&semt=ais_hybrid');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+}
+header{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  gap: 40px;
+  position: sticky;
+  z-index: 5;
+  top: 0  ;
+  backdrop-filter: blur(14px);
+
+}
+header button{
+  outline: none ;
+  border-radius: 20%;
+  opacity: 1;
+  cursor: pointer;
+  padding: auto 10px;
+  background: white;
+  outline: none;
+  border: none;
+  color: #545454;
+  box-shadow: 2px 2px 2px slateblue ;
+  transition: all ease-in 150ms , border ease 0.5s;
+
+}
+header button:hover{
+  outline: none ;
+  border-radius: 30%;
+  background: rgb(166, 163, 163);
+  color: white;
+  
+}
+header button:active{
+ box-shadow: none;
+ border-radius: 20%;
+
+}
+
+
+
+
+
+
+.container{
+  display: flex;
+  padding: 1.15rem;
+  flex-wrap: wrap;
+  row-gap: 2.4rem;
+  column-gap: 1rem;
+  justify-content: center;
+  margin: 4.725rem 1.15rem;
+  box-sizing: border-box;
+  border-bottom: 4px solid blueviolet;
+  
+}
+ /* .container{
+  display: grid;
+  grid-column: auto;
+  grid-row: auto;
+ } */
+
+ .card{
+   border: 2px solid black;
+   width: 250px;
+   height: 300px;
+   padding: 0.725rem;
+   display: flex;
+   justify-content: space-between;
+   flex-flow: column;
+   background: seashell;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+  .card div{
+  height: 40%;
+  justify-self: end;
+  /* background: red; */
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+h2{
+  margin: 0;
+}
+
+.contSideScroll{
+  padding:0 10vw;
+  position: relative;
+  width: 100vw;
+  justify-self: center;
+  background: linear-gradient(220.70deg,purple , pink );
+  background-clip: border-box;
+}
+.contContainers .sideScroll{ 
+  display: flex;
+  width: 100%;
+  justify-self: center;
+  overflow: hidden;
+  flex-direction: row;
+  /* overflow: hidden; */
+  flex-wrap: nowrap;
+  gap: 16px;
+  margin: 1.725rem;
+  padding: 0.725rem;
+  border-bottom: 2px solid purple;
+  /* position: relative; */
+
+}  
+
+.contSideScroll button{
+  position: absolute;
+  padding: 8px;
+  font-size: large;
+  font-weight: 800;
+  border-radius: 100px;
+  top: 40%;
+  cursor: pointer;
+
+}
+.contSideScroll button:hover{
+  background: rgb(188, 190, 191);
+
+}
+
+.previousBtn{
+  left: 10%;
+
+}
+.nextBtn{
+  right: 10%;
+}
+.sideScroll .card{ 
+  min-width: 300px;
+  
+}
