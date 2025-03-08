@@ -1,24 +1,31 @@
 
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   background:#333;
+  scrollbar-width: none;
+  overflow-y: none;
 }
 
 .bgImage{
   background-image: url('https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546189.jpg?ga=GA1.1.206173204.1726642244&semt=ais_hybrid');
   background-size: cover;
   background-position: center;
-  background-blend-mode: darken;
   position: fixed;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 110vw;
+  height: 110vh;
   z-index: -1;
 
 }
 header{
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   gap: 40px;
   position: sticky;
   z-index: 5;
@@ -99,31 +106,33 @@ header button:active{
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-h2{
-  margin: 0;
-}
 
 .contSideScroll{
   padding:0 10vw;
   position: relative;
-  width: 100vw;
+  width: 100%;
   justify-self: center;
   background: linear-gradient(220.70deg,purple , pink );
   background-clip: border-box;
 }
+.contSideScroll .sideScroll .card{
+  min-width: 200px;
+  width: 250px;
+}
 .contContainers .sideScroll{ 
+  scroll-behavior: smooth;
   display: flex;
-  width: 100%;
+
   justify-self: center;
   overflow: hidden;
   flex-direction: row;
-  /* overflow: hidden; */
+
   flex-wrap: nowrap;
   gap: 16px;
   margin: 1.725rem;
   padding: 0.725rem;
   border-bottom: 2px solid purple;
-  /* position: relative; */
+
 
 }  
 
@@ -137,6 +146,7 @@ h2{
   cursor: pointer;
 
 }
+
 .contSideScroll button:hover{
   background: rgb(188, 190, 191);
 

@@ -96,9 +96,9 @@ function App() {
               slot4
             </button>
           </nav>
-        </header>
+        </header> 
 
-        <Navbar />
+         <Navbar />
 
 
         <div ref={containerRef} className='contContainers '>
@@ -110,7 +110,7 @@ function App() {
               {'<<'}
             </button>
 
-            <button onClick={() => scrollToIndexDiv(divIndex.current < lastScrollDivIndex.current / 4 - 1 ? divIndex.current = divIndex.current + 1 : divIndex.current = 0, '.card')} className='nextBtn'>
+            <button onClick={() => scrollToIndexDiv(divIndex.current < lastScrollDivIndex.current - 1 ? divIndex.current = divIndex.current + 1 : divIndex.current = 0, '.card')} className='nextBtn'>
               {'>>'}
             </button>
 
